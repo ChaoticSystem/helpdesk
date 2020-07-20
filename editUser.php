@@ -101,14 +101,14 @@ $resultado['plataforma'] ? $checkedp = "checked" : $checkedp = " ";
 						<div class="input-field col s6">
 
 							<label>Nombre:</label>
-							<input type="text" class="form-control input-sm" id="nombre" name="nombre" value="<?=$resultado['personaNombre']?>">
+							<input type="text" required class="form-control input-sm" id="nombre" name="nombre" value="<?=$resultado['personaNombre']?>">
 
 						</div>
 
 						<div class="input-field col s6">
 
 							<label>Apellido:</label>
-							<input type="text" class="form-control input-sm" id="apellido" name="apellido" value="<?=$resultado['apellido']?>">
+							<input type="text" required class="form-control input-sm" id="apellido" name="apellido" value="<?=$resultado['apellido']?>">
 
 						</div>
 
@@ -119,14 +119,14 @@ $resultado['plataforma'] ? $checkedp = "checked" : $checkedp = " ";
 						<div class="input-field col s6">
 
 							<label>Cedula:</label>
-							<input type="text" class="form-control input-sm" id="cedula" name="cedula" value="<?=$resultado['cedula']?>">
+							<input type="text" required class="form-control input-sm" id="cedula" name="cedula" value="<?=$resultado['cedula']?>">
 
 						</div>
 
 						<div class="input-field col s6">
 
 							<label>Email:</label>
-							<input type="text" class="form-control input-sm" id="email" name="email" size="30" value="<?=$resultado['email']?>">
+							<input type="text" required class="form-control input-sm" id="email" name="email" size="30" value="<?=$resultado['email']?>">
 
 						</div>
 
