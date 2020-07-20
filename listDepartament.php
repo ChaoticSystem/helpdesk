@@ -48,7 +48,7 @@ require ("scripts/scriptValidaSession.php");
 
   <body>
 
-    <img src="images/banner-top.png" alt="" width="100%" height="200px">
+
     <?php
 
       if($_SESSION['ticket_tipo'] == 1 || ($_SESSION['ticket_tipo'] > 3 && $_SESSION['ticket_tipo'] < 6) ) include_once("partes/nav.php"); else include_once("partes/nav2.php");
