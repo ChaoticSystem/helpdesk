@@ -198,65 +198,18 @@ require ("scripts/scriptValidaSession.php");
 		            <label>Compañia</label>
               	<select name="empresa" id="empresa" class="browser-default">
                   <option value="0">Seleccione Empresa</option>
-                  <option value="1">DIARCA, S.A</option>
-                  <option value="2">DISERIAL, C.A</option>
-                  <option value="3">DIARCA MONAGAS</option>
-                  <option value="4">DIARCA GUAYANA</option>
-                  <option value="5">ETSE</option>
-                  <option value="6">ALIDELTA, C.A</option>
-                  <option value="7">TRAISLAND</option>
+                  <option value="1">Mi primera Empresa</option>
+                  
               	</select>
 		          </div>
 	            <div id="div_1" class="col s12 cede">
                 <label>Sede</label>
                 <select name="cede1" id="cede1" class="browser-default">
                   <option value="0">Seleccione Sede</option>
-                  <option value="1">Porlamar</option>
+                  <option value="1">Mi primera Sede</option>
                 </select>
 	            </div>
-	            <div id="div_2" class="col s12 cede">
-                <label>Sede</label>
-                <select name="cede2" id="cede2" class="browser-default">
-                  <option value="0">Seleccione Sede</option>
-                  <option value="1">Barcelona</option>
-                </select>
-	          	</div>
-              <div id="div_3" class="col s12 cede">
-                <label>Sede</label>
-                <select name="cede3" id="cede3" class="browser-default">
-                  <option value="0">Seleccione Sede</option>
-                  <option value="1">Maturin</option>
-                </select>
-              </div>
-              <div id="div_4" class="col s12 cede">
-                <label>Sede</label>
-                <select name="cede4" id="cede4" class="browser-default">
-                  <option value="0">Seleccione Sede</option>
-                  <option value="1">Puerto Ordaz</option>
-                </select>
-              </div>
-              <div id="div_5" class="col s12 cede">
-                <label>Sede</label>
-                <select name="cede5" id="cede5" class="browser-default">
-                  <option value="0">Seleccione Sede</option>
-                  <option value="1">Barcelona</option>
-                </select>
-              </div>
-              <div id="div_6" class="col s12 cede">
-                <label>Sede</label>
-                <select name="cede6" id="cede6" class="browser-default">
-                  <option value="0">Seleccione Sede</option>
-                  <option value="1">Porlamar</option>
-                </select>
-              </div>
-              <div id="div_7" class="col s12 cede">
-                <label>Sede</label>
-                <select name="cede7" id="cede7" class="browser-default">
-                  <option value="0">Seleccione Sede</option>
-                  <option value="1">Porlamar</option>
-                  <option value="1">Barcelona</option><
-                </select>
-              </div>
+	           
     					<div class="col s12">
     						<div>Seleccione un Departamento </div>
     						<div id="listaDepartamentos" style="padding-left: 2px"></div>
