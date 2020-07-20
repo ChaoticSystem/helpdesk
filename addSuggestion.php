@@ -43,29 +43,34 @@ $resultado  = $consulta->fetch_array(MYSQLI_ASSOC);
 
       $("#addTicket").submit(function() {
 
-        if ($("#solicitud").val() == 0) {
+       
+				if ($("#titulo").val() < 5) {
 
-          $( "#dialog-modal-solicitud" ).dialog({
-            height: 140,
-            modal: true
-          });
+				   $("#dialog-modal-titulo").openModal();
+					
+					 return false;
+					
+					}
 
-          $("#error-solicitud").addClass("has-error");
 
-          return false;
-        }
+			   if ($("#solicitud").val() == 0) {
 
-        if ($("#solicitud").val() == 7 && $("#otro").val().length == 0) {
+			   $("#dialog-modal-solicitud").openModal();
+				
+				 return false;
+				
+				}
 
-          $( "#dialog-modal-otro" ).dialog({
-            height: 140,
-            modal: true
-          });
+      
+		
+				 if ($("#observacion").val().length < 15) {
 
-          $("#otro").addClass("has-error");
-
-          return false;
-        }
+			   $("#dialog-modal-otro").openModal();
+				
+				 return false;
+				
+				}
+		
 
       });
 
@@ -73,11 +78,11 @@ $resultado  = $consulta->fetch_array(MYSQLI_ASSOC);
 
           if($("#solicitud").val() == 7){
 
-            $("#otro").show();
-          }else{
-
-            $("#otro").hide();
-          }
+             $("#dialog-modal-otro").openModal();
+		
+				return false;
+        
+		}
 
         });
 
@@ -94,19 +99,32 @@ $resultado  = $consulta->fetch_array(MYSQLI_ASSOC);
 
     <!-- Mensajes al Usuario -->
 
-    <div id="dialog-modal-solicitud" class="modal">
+    <div id="dialog-modal-titulo" class="modal">
       <div class="modal-content">
         <h4>Atención!</h4>
-        <p>Antes debe seleccionar a que aplica su Sugerencia.</p>
+        <p>Antes debe indicar el titulo de su solicitud.</p>
       </div>
     </div>
 
+
+<div id="dialog-modal-solicitud" class="modal">
+      <div class="modal-content">
+        <h4>Atención!</h4>
+        <p>Indique a que área va dirigida su solicitud.</p>
+      </div>
+    </div>
+
+	
+	
     <div id="dialog-modal-otro" class="modal">
       <div class="modal-content">
         <h4>Atención!</h4>
-        <p>El campo Otro no puede quedar en Blanco.</p>
+        <p>Explique detalladamente su sugerencia en el area de abajo.</p>
       </div>
     </div>
+
+
+
 
     <!-- Fin -->
 
@@ -139,7 +157,7 @@ $resultado  = $consulta->fetch_array(MYSQLI_ASSOC);
 
           <div class="row">
             <div class="input-field col s12">
-            <input type="text" id="titulo" name="titulo" size="60" required>
+            <input type="text" id="titulo" name="titulo" size="60" >
             <label for="titulo">Titulo:</label>
             </div>
           </div>
@@ -148,7 +166,7 @@ $resultado  = $consulta->fetch_array(MYSQLI_ASSOC);
             <div class="input-field col s12">
               <label for="solicitud">¿Aplica para?</label>
               <span class="form-group" id="error-solicitud">
-                <select name="aplica" id="solicitud" required>
+                <select name="aplica" id="solicitud" >
                   <option value="0">-</option>
                   <option value="Herramienta HelpDesk">La Herramienta de Soporte</option>
                   <option value="Sistema Administrativo">Sistema Administrativo</option>
@@ -165,7 +183,7 @@ $resultado  = $consulta->fetch_array(MYSQLI_ASSOC);
 
           <div class="row">
             <div class="input-field col s12">
-              <textarea id="observacion" required class="materialize-textarea" rows="5" name="observacion" placeholder="De una descripcion de su Solicitud"></textarea>
+              <textarea id="observacion"  class="materialize-textarea" rows="5" name="observacion" placeholder="De una descripcion de su Solicitud"></textarea>
               <label for="observacion">Observación:</label>
             </div>
           </div>
