@@ -237,21 +237,8 @@ if(isset($_POST['usuario'])){
                 $archivo = "No";
 
               if($resultado_usuario['id_cede']==11)
-                  $cede = "Diarca - Barcelona";
-                if($resultado_usuario['id_cede']==21)
-                  $cede = "Diserial - Barcelona";
-                if($resultado_usuario['id_cede']==31)
-                  $cede = "Diarca - Monagas";
-                if($resultado_usuario['id_cede']==41)
-                  $cede = "Diarca - Guayana";
-                if($resultado_usuario['id_cede']==51)
-                  $cede = "Etse - Barcelona";
-                if($resultado_usuario['id_cede']==61)
-                  $cede = "Alidelta - Porlamar";
-                if($resultado_usuario['id_cede']==71)
-                  $cede = "Trainsland - Porlamar";
-                if($resultado_usuario['id_cede']==72)
-                  $cede = "Trainsland - Barcelona";
+                  $cede = "Mi primera Sede";
+           
 
                 $fecha = array();
 
