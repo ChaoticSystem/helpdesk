@@ -25,7 +25,7 @@ $resultado  = $consulta->fetch_array(MYSQLI_ASSOC);
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HelpDesk - Nuevo Departamento</title>
+    <title>HelpDesk - Nueva sugerencia</title>
 
     <link rel="shortcut icon" href="images/favicon.png" />
     <link href="materialize/css/materialize.min.css" rel="stylesheet" media="screen">
