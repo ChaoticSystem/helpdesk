@@ -1,0 +1,63 @@
+TABLE		{
+		BORDER-COLLAPSE: Collapse;
+		}
+
+.boxborder	{
+		border-color:#000000;
+		border-style:solid;
+		border-width:1;
+		}
+
+INPUT, BUTTON	{
+		background-color: #99CCFF;
+		font-family: arial;
+		font-size: 11px;
+		color: #000000;
+		border: 1 solid #000000;
+		height: 18px;
+		}
+
+TEXTAREA	{
+		background-color: #99CCFF;
+		font-family: arial;
+		font-size: 11px;
+		color: #000000;
+		border: 1 solid #000000;
+		}
+
+A		{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9pt;
+		color: NAVY;
+		text-decoration:none;
+		}
+
+A:hover		{
+		color:BLUE;
+		text-decoration:none;
+		}
+
+P		{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9pt;
+		color: BLACK;
+		PADDING-LEFT: 3;
+		}
+
+LI		{
+		list-style-type:square;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 9pt;
+		color: #cc0000
+		}
+
+BODY		{
+		scrollbar-base-color: #AABBDD;
+		scrollbar-face-color: default;
+		scrollbar-track-color: default;
+		scrollbar-arrow-color: default;
+		scrollbar-3dlight-color: default;
+		scrollbar-darkshadow-color: #000000;
+		scrollbar-highlight-color: default;
+		scrollbar-shadow-color: #000000;
+		}

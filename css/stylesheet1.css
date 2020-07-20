@@ -1,0 +1,9 @@
+TABLE		{
+		BORDER-COLLAPSE: Collapse;
+		}
+
+.boxborder	{
+		border-color:#000000;
+		border-style:solid;
+		border-width:1;
+		}
