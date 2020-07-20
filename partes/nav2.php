@@ -23,7 +23,7 @@
   <li><a href='nuevoTicket-0'><i class="fa fa-plus-square" aria-hidden="true"></i> Nueva Solicitud</a></li>
   <li><a href='tickets-sin-revisar-0'><i class="fa fa-pause" aria-hidden="true"></i> Solicitudes Pendientes</a></li>
   <li><a href='tickets-revisados-0'><i class="fa fa-check-square" aria-hidden="true"></i> Solicitudes Cerradas</a></li>
-  <li><a href='reporte-pendientes' target="blank"><i class="fa fa-list" aria-hidden="true"></i> Reporte pendientes</a></li>
+
 </ul>
 
 <nav style="margin-top:-10px">
@@ -41,7 +41,6 @@
       <li><a href='nuevoTicket-0'>Nueva Solicitud</a></li>
       <li><a href='tickets-sin-revisar-1'>Solicitudes Pendientes</a></li>
       <li><a href='tickets-revisados-2'>Solicitudes Cerradas</a></li>
-	  <li><a href='reportes-pendientes' target="blank" >Reporte pendientes</a></li>
       <li><a href='usuarios-3'>Mi perfil</a></li>
       <li><a href='sugerencias-6'>Sugerencias</a></li>
       <li><a href='sugerencias-6'>Usuario: <?=$_SESSION['ticket_usuario']?></a></li>
